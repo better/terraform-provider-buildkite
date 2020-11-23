@@ -217,6 +217,11 @@ func resourcePipeline() *schema.Resource {
 							Optional: true,
 							Default:  false,
 						},
+						"build_pull_request_labels_changed": &schema.Schema{
+							Type:     schema.TypeBool,
+							Optional: true,
+							Default:  false,
+						},
 						"cancel_deleted_branch_builds": &schema.Schema{
 							Type:     schema.TypeBool,
 							Optional: true,
