@@ -284,6 +284,11 @@ func resourcePipeline() *schema.Resource {
 							Type:     schema.TypeBool,
 							Optional: true,
 						},
+						"use_step_key_as_commit_status": &schema.Schema{
+							Type:     schema.TypeBool,
+							Optional: true,
+							Default:  false,
+						},
 						"commit_status_404s": &schema.Schema{
 							Type:     schema.TypeInt,
 							Computed: true,
